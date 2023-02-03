@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: solid rebeccapurple;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>please loggin here</h1>
+    </center>
+    <div>
+        username:<input type="text" name="name" id="name" placeholder="enter name">
+        <br><br>
+        passwordd: <input type="password" name="" id="pass" placeholder="password">
+        <br><br>
+        <button onclick="loginSubmit()">Submit</button>
+    </div>
+    <script>
+        function loginSubmit() {
+            let user = document.getElementById('name').value;
+            let pass = document.getElementById('pass').value;
+            if (user == "Sapple" && pass == 123) {
+                location.assign('loginpage.html')
+            }
+            else
+        {
+            alert("please enter current pass or username")
+        }
+        }
+    </script>
+</body>
+
+</html>
